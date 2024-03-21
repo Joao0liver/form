@@ -1,0 +1,41 @@
+h1 {
+    font-family: Verdana;
+}
+
+.img-users {
+    vertical-align: top;
+    padding-left: 580px;
+    border-bottom: solid 6px blue;
+    padding-bottom: 20px;
+}
+
+fieldset {
+    border: solid 1px rgb(167, 167, 167);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 15px 15px 15px 15px;
+    background-color: rgb(238, 238, 238);
+    font-family: Verdana;
+    font-size: small;
+}
+
+.legenda {
+    font-weight: 550;
+}
+
+#form-button {
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+footer {
+    margin-top: 35px;
+}
+
+#out-link1 {
+    padding-left: 18px;
+}
+
+#out-link2 {
+    padding-left: 10px;
+}
