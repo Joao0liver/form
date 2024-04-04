@@ -1,12 +1,23 @@
 h1 {
-    font-family: Verdana;
+    font-family: Verdana, Tahoma, sans-serif, serif;
+    margin-top: 40px;
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif, serif;
+    width: 45%;
+    margin: auto;
+}
+
+header {
+    border-bottom: solid 6px blue;
 }
 
 .img-users {
     vertical-align: top;
     padding-left: 580px;
-    border-bottom: solid 6px blue;
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    margin-left: 150px;
 }
 
 fieldset {
@@ -15,8 +26,16 @@ fieldset {
     padding: 10px 10px 10px 10px;
     margin: 15px 15px 15px 15px;
     background-color: rgb(238, 238, 238);
-    font-family: Verdana;
+    font-family: Verdana, Tahoma, sans-serif, serif;
     font-size: small;
+}
+
+input {
+    margin: 6px 6px 0 6px;
+}
+
+label {
+    padding: 0 0 0 5px;
 }
 
 .legenda {
