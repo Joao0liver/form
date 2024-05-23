@@ -22,8 +22,8 @@
         <label class="dados">Nome:</label><input type="text" name="nome" required></input>
         <label class="dados">E-mail:</label><input type="email" name="email" required></input><br>
         <label class="dados">Nascimento:</label><input type="date" name="nascimento"></input><br>
-        <label class="dados">RG:</label><input type="text" name="RG" required></input><br>
-        <label class="dados">CPF:</label><input type="text" name="CPF" required></input>
+        <label class="dados">RG:</label><input type="text" name="RG"></input><br>
+        <label class="dados">CPF:</label><input type="text" name="CPF" placeholder="000.000.000-00" required></input>
         </p>
         </fieldset>
     </div>
@@ -32,11 +32,40 @@
         <legend class="legenda">Endereço</legend>
         <p>
         <label>Rua:</label><input type="text" name="rua"></input>
-        <label>Número:</label><input type="text" name="número da casa"></input><br>
+        <label>Número:</label><input type="number" name="número da casa"></input><br>
         <label>Bairro:</label><input type="text" name="bairro"></input><br>
-        <label>Estado:</label><input type="" name="estado"></input><br>
+        <label>Estado:</label>
+        <select name="estado" required>
+            <option value="ac">Acre</option>
+            <option value="al">Alagoas</option> 
+            <option value="am">Amazonas</option> 
+            <option value="ap">Amapá</option> 
+            <option value="ba">Bahia</option> 
+            <option value="ce">Ceará</option> 
+            <option value="df">Distrito Federal</option> 
+            <option value="es">Espírito Santo</option> 
+            <option value="go">Goiás</option> 
+            <option value="ma">Maranhão</option> 
+            <option value="mt">Mato Grosso</option> 
+            <option value="ms">Mato Grosso do Sul</option> 
+            <option value="mg">Minas Gerais</option> 
+            <option value="pa">Pará</option> 
+            <option value="pb">Paraíba</option> 
+            <option value="pr">Paraná</option> 
+            <option value="pe">Pernambuco</option> 
+            <option value="pi">Piauí</option> 
+            <option value="rj">Rio de Janeiro</option> 
+            <option value="rn">Rio Grande do Norte</option> 
+            <option value="ro">Rondônia</option> 
+            <option value="rs">Rio Grande do Sul</option> 
+            <option value="rr">Roraima</option> 
+            <option value="sc">Santa Catarina</option> 
+            <option value="se">Sergipe</option> 
+            <option value="sp">São Paulo</option> 
+            <option value="to">Tocantins</option>
+        </select><br>
         <label>Cidade:</label><input type="text" name="cidade"></input><br>
-        <label>CEP:</label><input type="text" name="CEP"></input>
+        <label>CEP:</label><input type="text" name="CEP" placeholder="00000-000" pattern="\d{5}\-\d{3}"></input>
         </p>
         </fieldset>
     </div>
@@ -44,16 +73,16 @@
         <fieldset>
         <legend class="legenda">Login</legend>
         <p>
-        <label>Imagem de perfil:</label><input type="file" name="imagem do perfil"></input><br>
-        <label>Login de usuário:</label><input type="text" name="login de usuário"></input><br>
-        <label>Senha:</label><input type="password" name="senha"></input><br>
-        <label>Confirme a senha:</label><input type="password" name="confirmar senha"></input><br>
+        <label>Imagem de perfil:</label><input type="file" name="imagem do perfil" accept="image/*"></input><br>
+        <label>Login de usuário:</label><input type="text" name="login de usuário" required></input><br>
+        <label>Senha:</label><input type="password" name="senha" required></input><br>
+        <label>Confirme a senha:</label><input type="password" name="confirmar senha" required></input><br>
         </p>
         </fieldset>
     </div>
     <div id="form-button">
-        <button class="botao" type="submit">Enviar dados</button>
-        <button class="botao">Limpar</button>
+        <button class="botao" type="submit" name="enviar_dados" value="Enviar">Enviar dados</button>
+        <button class="botao" type="reset" name="limpar_dados" value="Limpar">Limpar</button>
     </div>
     </form>
     </div>
@@ -62,7 +91,7 @@
     <p>
         <a href="" target="top" id="out-link1">Termo de uso</a>
         <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" 
-        target="top" id="out-link2"> LGPD para saber mais</a>
+        target="top" id="out-link2">LGPD</a>
     </p>
 </footer>
 </html>

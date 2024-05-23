@@ -1,6 +1,13 @@
+:root {
+    font-family: Verdana, Tahoma, sans-serif, serif;
+}
+
 h1 {
     font-family: Verdana, Tahoma, sans-serif, serif;
-    margin-top: 40px;
+    margin-top: 95px;
+    margin-bottom: -55px;
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -11,6 +18,7 @@ body {
 
 header {
     border-bottom: solid 6px blue;
+    margin-bottom: 30px;
 }
 
 .img-users {
@@ -18,6 +26,8 @@ header {
     padding-left: 580px;
     padding-bottom: 0;
     margin-left: 150px;
+    display: flex;
+    align-items: center;
 }
 
 fieldset {
@@ -26,11 +36,14 @@ fieldset {
     padding: 10px 10px 10px 10px;
     margin: 15px 15px 15px 15px;
     background-color: rgb(238, 238, 238);
-    font-family: Verdana, Tahoma, sans-serif, serif;
     font-size: small;
 }
 
 input {
+    margin: 6px 6px 0 6px;
+}
+
+select {
     margin: 6px 6px 0 6px;
 }
 
